@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Image Filter WebApp</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🎨 Image Filter WebApp</h1>
+
+    <div class="upload-section">
+      <input type="file" id="upload" accept="image/*" />
+    </div>
+
+    <div class="image-container">
+      <img id="preview" src="" alt="Your image will appear here" />
+    </div>
+
+    <div class="controls">
+      <label>Grayscale</label>
+      <input type="range" id="grayscale" min="0" max="100" value="0" />
+      
+      <label>Sepia</label>
+      <input type="range" id="sepia" min="0" max="100" value="0" />
+      
+      <label>Blur</label>
+      <input type="range" id="blur" min="0" max="10" step="0.1" value="0" />
+      
+      <label>Brightness</label>
+      <input type="range" id="brightness" min="50" max="200" value="100" />
+      
+      <label>Contrast</label>
+      <input type="range" id="contrast" min="50" max="200" value="100" />
+    </div>
+
+    <div class="buttons">
+      <button id="reset">Reset</button>
+      <button id="download">Download</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
